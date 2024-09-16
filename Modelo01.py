@@ -13,7 +13,7 @@ data = pd.read_excel('tabela_excel3.xlsx')
 data['data'] = pd.to_datetime(data['data'])
 
 # Calcula o número de dias desde o primeiro registro de data até cada ponto no tempo, armazenando o resultado em uma nova coluna 'days_since_start'.
-data['days_since_start'] = (data['data'] - data['data'].min()).dt.dayso
+data['days_since_start'] = (data['data'] - data['data'].min()).dt.days
 
 # X: variável independente, que representa os dias desde o início.
 # y: variável dependente, que são as vendas registradas.
